@@ -52,7 +52,7 @@ export default function Sidebar({ open, setOpen, collapsed, setCollapsed }) {
       <motion.div
         initial={false}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
-        style={{ width: '256px', minWidth: '256px', maxWidth: '256px' }}
+        style={{ width: '256px', minWidth: '256px', maxWidth: '256px', flexShrink: 0 }}
         className="hidden md:flex fixed left-4 top-4 bottom-4 bg-gradient-to-b from-[#0A192F]/80 to-[#0A192F]/95 backdrop-blur-[20px] rounded-2xl flex-col py-6 px-4 z-40 overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] border border-accent/30"
       >
         {/* Menu Title */}
