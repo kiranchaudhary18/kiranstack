@@ -119,7 +119,7 @@ export default function GithubPage() {
   }, [statsRepos])
 
   return (
-    <main className={`flex-1 min-h-screen pt-8 pb-16 px-4 ${mainContent} transition-all duration-300`}>
+    <main className={`w-full min-h-screen pt-8 pb-16 px-4 ${mainContent} transition-all duration-300`}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

@@ -15,7 +15,7 @@ export default function About() {
   ]
 
   return (
-    <main className={`flex-1 ${mainContent} min-h-screen pt-8 pb-16 px-4 transition-all duration-300`}>
+    <main className={`w-full ${mainContent} min-h-screen pt-8 pb-16 px-4 transition-all duration-300`}>
       {/* Header section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -6,9 +6,9 @@ export default function LayoutWrapper({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex w-full min-h-screen">
+    <div className="w-full min-h-screen relative">
       <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
-      <div className="flex-1 overflow-y-auto">
+      <div className="w-full overflow-y-auto">
         {children}
       </div>
     </div>

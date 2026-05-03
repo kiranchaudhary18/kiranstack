@@ -129,7 +129,7 @@ export default function Home() {
   const scrollingCertificates = [...homeCertificates, ...homeCertificates]
 
   return (
-    <div className="flex-1 min-h-screen bg-gradient-to-br from-primary via-primary to-primary/95 py-8 px-4 md:pl-[352px] md:pr-[64px]">
+    <div className="w-full min-h-screen bg-gradient-to-br from-primary via-primary to-primary/95 py-8 px-4 md:pl-[352px] md:pr-[64px]">
       <div className="w-full">
         {/* Hero Section */}
         <motion.div
