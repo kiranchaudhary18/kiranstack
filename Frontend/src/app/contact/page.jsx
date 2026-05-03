@@ -58,7 +58,7 @@ export default function Contact() {
     }
   }
 
-  const mainContent = 'md:pl-[352px] md:pr-[64px]'
+  const mainContent = 'md:pl-[328px] md:pr-[64px]'
 
   const contactInfo = [
     { icon: Mail, label: 'Email', value: 'kiran.chaudhary.cg@gmail.com', link: 'mailto:kiran.chaudhary.cg@gmail.com' },
@@ -75,7 +75,7 @@ export default function Contact() {
   ]
 
   return (
-    <main className={`w-full min-h-screen pt-8 pb-16 px-4 ${mainContent} transition-all duration-300`}>
+    <main className={`w-full min-h-screen pt-4 sm:pt-6 md:pt-8 pb-16 px-4 sm:px-6 ${mainContent} transition-all duration-300`}>
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

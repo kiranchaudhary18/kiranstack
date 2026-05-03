@@ -129,14 +129,14 @@ export default function Home() {
   const scrollingCertificates = [...homeCertificates, ...homeCertificates]
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-primary via-primary to-primary/95 py-8 px-4 md:pl-[352px] md:pr-[64px]">
-      <div className="w-full">
+    <div className="w-full min-h-screen bg-gradient-to-br from-primary via-primary to-primary/95 pt-4 sm:pt-6 md:pt-8 pb-16 px-4 sm:px-6 md:pl-[328px] md:pr-[64px]">
+      <div className="w-full max-w-full">
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-8 mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-start"
+          className="mb-8 mt-4 sm:mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-start"
         >
           {/* Left: Text Content */}
           <div className="md:col-span-2 h-full">
@@ -203,8 +203,8 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="sticky top-8 md:w-11/12 md:ml-auto"
           >
-            <Card className="border-2 border-accent/40 hover:border-accent/80 transition-all overflow-hidden p-5 md:p-6 mix-blend-normal">
-              <div className="aspect-[10/9] md:aspect-square relative mb-6 rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-accent/5">
+            <Card className="border-2 border-accent/40 hover:border-accent/80 transition-all overflow-hidden p-4 sm:p-5 md:p-6 mix-blend-normal">
+              <div className="aspect-[10/9] md:aspect-square relative mb-4 sm:mb-6 rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-accent/5">
                 <motion.img
                   animate={{ objectPosition: ["center 0%", "center 100%", "center 0%"] }}
                   transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
@@ -214,8 +214,8 @@ export default function Home() {
                 />
               </div>
               <a href={resumeLink} download className="w-full">
-                <Button variant="primary" size="md" className="w-full text-[15px] font-semibold py-3 px-4">
-                  <Download className="w-[18px] h-[18px] mr-2" />
+                <Button variant="primary" size="md" className="w-full text-[13px] sm:text-[15px] font-semibold py-2 sm:py-3 px-4">
+                  <Download className="w-[16px] sm:w-[18px] h-[16px] sm:h-[18px] mr-2" />
                   Download Resume
                 </Button>
               </a>
@@ -224,7 +224,7 @@ export default function Home() {
         </motion.div>
 
         {/* Stats Grid - 4 Cards in One Line aligned with About Me */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 -mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-10 md:-mt-12 mt-6 sm:mt-8">
           <div className="md:col-span-2">
             <motion.div
               variants={container}

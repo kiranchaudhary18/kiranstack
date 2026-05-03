@@ -5,7 +5,7 @@ import Card from '../../components/Card'
 import { Terminal, ChevronRight, Github, Twitter, Linkedin, Youtube, HelpCircle, Code2, Award } from 'lucide-react'
 
 export default function About() {
-  const mainContent = 'md:pl-[352px] md:pr-[64px]'
+  const mainContent = 'md:pl-[328px] md:pr-[64px]'
 
   const connectLinks = [
     { name: 'GitHub', icon: Github, url: 'https://github.com/kiranchaudhary18' },
@@ -15,7 +15,7 @@ export default function About() {
   ]
 
   return (
-    <main className={`w-full ${mainContent} min-h-screen pt-8 pb-16 px-4 transition-all duration-300`}>
+    <main className={`w-full ${mainContent} min-h-screen pt-4 sm:pt-6 md:pt-8 pb-16 px-4 sm:px-6 transition-all duration-300`}>
       {/* Header section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
