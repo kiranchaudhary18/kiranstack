@@ -8,7 +8,7 @@ import { Calendar, Medal, BookOpen } from 'lucide-react'
 const education = [
   {
     degree: 'Bachelor of Technology in Computer Science and Engineering',
-    institution: 'CodingGita × Rai University Ahmedabad',
+    institution: 'CodingGita × Rai University, Ahmedabad',
     duration: '2024 - Ongoing',
     grade: 'CGPA: 9.30/10',
     achievements: [
@@ -19,7 +19,7 @@ const education = [
     icon: BookOpen,
   },
   {
-    degree: 'Higher Secondary Education (HSC) - Science',
+    degree: 'Higher Secondary Education (HSC) - Science(PCM)',
     institution: 'Shri Swastik Higher Secondary School, Palanpur',
     duration: '2022 - 2024',
     grade: 'Percentile Rank: 69.17',
