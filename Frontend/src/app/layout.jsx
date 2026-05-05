@@ -56,7 +56,7 @@ export const metadata = {
     siteName: 'Kiran Chaudhary | Kiran Dekaliya Portfolio',
     title: 'Kiran Chaudhary | Kiran Dekaliya | Full Stack Developer & Software Engineer',
     description:
-      'Kiran Chaudhary (Kiran Dekaliya) — Experienced Full Stack Developer specializing in React, Next.js, Node.js, and MongoDB. Creating innovative web applications with modern technologies.'
+      'Kiran Chaudhary (Kiran Dekaliya) — Experienced Full Stack Developer specializing in React, Next.js, Node.js, and MongoDB. Creating innovative web applications with modern technologies.',
     images: [
       {
         url: 'https://kirandekaliya.in/kd-logo.png',
