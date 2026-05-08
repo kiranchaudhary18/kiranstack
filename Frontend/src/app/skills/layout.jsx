@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Skills | Kiran Dekaliya',
+  title: 'Skills & Expertise | Kiran Dekaliya',
   description:
-    'Technical skills of Kiran Dekaliya - Software Engineer and Full-Stack Developer. Expertise in React, Next.js, Node.js, MongoDB, PostgreSQL, AWS, TypeScript, and more.',
+    'Technical skills of Kiran Dekaliya - Software Engineer. Proficient in React, Next.js, Node.js, MongoDB, PostgreSQL, AWS, TypeScript, and modern full-stack development.',
   canonical: 'https://kirandekaliya.in/skills',
   alternates: {
     canonical: 'https://kirandekaliya.in/skills',
@@ -10,16 +10,16 @@ export const metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://kirandekaliya.in/skills',
-    siteName: 'Kiran Dekaliya | Full-Stack Developer Portfolio',
-    title: 'Technical Skills | Kiran Dekaliya',
+    siteName: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
+    title: 'Skills & Expertise | Kiran Dekaliya',
     description:
-      'Explore the technical skills of Kiran Dekaliya - React, Next.js, Node.js, MongoDB, PostgreSQL, AWS, TypeScript, and modern web technologies.',
+      'Technical expertise: React, Next.js, Node.js, MongoDB, PostgreSQL, AWS, TypeScript, and modern web technologies.',
     images: [
       {
         url: 'https://kirandekaliya.in/kd-logo.png',
         width: 512,
         height: 512,
-        alt: 'Kiran Dekaliya - Software Engineer & Full-Stack Developer',
+        alt: 'Kiran Dekaliya - Software Engineer',
         type: 'image/png',
       },
     ],
@@ -28,9 +28,9 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@dekaliya_kiran',
     creator: '@dekaliya_kiran',
-    title: 'Technical Skills | Kiran Dekaliya',
+    title: 'Skills & Expertise | Kiran Dekaliya',
     description:
-      'Technical skills: React, Next.js, Node.js, MongoDB, PostgreSQL, AWS, and modern full-stack development technologies.',
+      'Full Stack development skills: React, Next.js, Node.js, MongoDB, PostgreSQL, AWS.',
     images: ['https://kirandekaliya.in/kd-logo.png'],
   },
   robots: {

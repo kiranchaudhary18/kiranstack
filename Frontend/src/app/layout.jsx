@@ -12,11 +12,11 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL('https://kirandekaliya.in'),
   title: {
-    default: 'Kiran Dekaliya | Software Engineer | Full-Stack Developer (MERN) | React Native Developer',
+    default: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
     template: '%s | Kiran Dekaliya',
   },
   description:
-    'Software Engineer and Full-Stack Developer specializing in MERN Stack, React, Next.js, Node.js, and AWS. Building scalable web and mobile applications with modern technologies. Based in Ahmedabad, India.',
+    'Software Engineer and Full Stack Developer specializing in MERN Stack, React Native, Next.js, AWS, scalable web applications, and modern UI/UX.',
   keywords: [
     'Kiran Dekaliya',
     'Software Engineer',
@@ -45,16 +45,16 @@ export const metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://kirandekaliya.in',
-    siteName: 'Kiran Dekaliya | Full-Stack Developer Portfolio',
-    title: 'Kiran Dekaliya | Software Engineer | Full-Stack Developer (MERN) | React Native Developer',
+    siteName: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
+    title: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
     description:
-      'Software Engineer and Full-Stack Developer specializing in MERN Stack, React, Next.js, Node.js, and AWS. Building scalable web and mobile applications.',
+      'Software Engineer and Full Stack Developer specializing in MERN Stack, React Native, Next.js, AWS, scalable web applications, and modern UI/UX.',
     images: [
       {
         url: 'https://kirandekaliya.in/kd-logo.png',
         width: 512,
         height: 512,
-        alt: 'Kiran Dekaliya - Software Engineer & Full-Stack Developer',
+        alt: 'Kiran Dekaliya - Software Engineer',
         type: 'image/png',
       },
     ],
@@ -63,9 +63,9 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@dekaliya_kiran',
     creator: '@dekaliya_kiran',
-    title: 'Kiran Dekaliya | Software Engineer | Full-Stack Developer (MERN)',
+    title: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
     description:
-      'Software Engineer and Full-Stack Developer specializing in MERN Stack, React, Next.js, Node.js, and AWS.',
+      'Software Engineer and Full Stack Developer specializing in MERN Stack, React Native, Next.js, AWS, scalable web applications, and modern UI/UX.',
     images: ['https://kirandekaliya.in/kd-logo.png'],
   },
   robots: {
@@ -94,7 +94,7 @@ const jsonLd = {
       '@type': 'Person',
       '@id': 'https://kirandekaliya.in/#person',
       name: 'Kiran Dekaliya',
-      alternateName: 'Kiran Chaudhary',
+      alternateName: '',
       url: 'https://kirandekaliya.in',
       image: {
         '@type': 'ImageObject',
@@ -102,7 +102,7 @@ const jsonLd = {
         width: 512,
         height: 512,
       },
-      jobTitle: ['Software Engineer', 'Full Stack Developer', 'React Native Developer'],
+      jobTitle: 'Software Engineer',
       worksFor: {
         '@type': 'Organization',
         name: 'Freelance Software Engineer',
@@ -135,14 +135,14 @@ const jsonLd = {
         'MERN Stack',
       ],
       description:
-        'Software Engineer and Full-Stack Developer specializing in MERN Stack, React, Next.js, Node.js, and AWS. Building scalable web and mobile applications.',
+        'Software Engineer and Full Stack Developer specializing in MERN Stack, React Native, Next.js, AWS, scalable web applications, and modern UI/UX.',
     },
     {
       '@type': 'WebSite',
       '@id': 'https://kirandekaliya.in/#website',
       url: 'https://kirandekaliya.in',
-      name: 'Kiran Dekaliya | Software Engineer & Full-Stack Developer',
-      description: 'Software Engineer and Full-Stack Developer specializing in MERN Stack, React, Next.js, Node.js, and AWS. Building scalable web and mobile applications.',
+      name: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
+      description: 'Software Engineer and Full Stack Developer specializing in MERN Stack, React Native, Next.js, AWS, scalable web applications, and modern UI/UX.',
       author: { '@id': 'https://kirandekaliya.in/#person' },
       potentialAction: {
         '@type': 'SearchAction',
@@ -284,9 +284,9 @@ const jsonLd = {
     {
       '@type': 'ProfilePage',
       '@id': 'https://kirandekaliya.in/#profile',
-      name: 'Kiran Dekaliya Portfolio',
+      name: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
       url: 'https://kirandekaliya.in',
-      description: 'Professional portfolio and resume of Kiran Dekaliya - Software Engineer & Full-Stack Developer.',
+      description: 'Professional portfolio and resume of Kiran Dekaliya - Software Engineer specializing in MERN Stack and modern web technologies.',
       mainEntity: { '@id': 'https://kirandekaliya.in/#person' },
     },
   ],

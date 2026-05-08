@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Certificates | Kiran Dekaliya',
   description:
-    'Professional certifications and achievements of Kiran Dekaliya - Software Engineer and Full-Stack Developer. Credentials in MERN Stack, React, Node.js, and AWS.',
+    'Professional certifications and achievements of Kiran Dekaliya - Software Engineer. Credentials in MERN Stack, React, Node.js, and AWS.',
   canonical: 'https://kirandekaliya.in/certificates',
   alternates: {
     canonical: 'https://kirandekaliya.in/certificates',
@@ -10,16 +10,16 @@ export const metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://kirandekaliya.in/certificates',
-    siteName: 'Kiran Dekaliya | Full-Stack Developer Portfolio',
+    siteName: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
     title: 'Certificates | Kiran Dekaliya',
     description:
-      'Professional certifications and achievements by Kiran Dekaliya - Software Engineer with expertise in MERN Stack, React, and modern web technologies.',
+      'Professional certifications and achievements by Kiran Dekaliya - Software Engineer with expertise in MERN Stack.',
     images: [
       {
         url: 'https://kirandekaliya.in/kd-logo.png',
         width: 512,
         height: 512,
-        alt: 'Kiran Dekaliya - Software Engineer & Full-Stack Developer',
+        alt: 'Kiran Dekaliya - Software Engineer',
         type: 'image/png',
       },
     ],
@@ -30,7 +30,7 @@ export const metadata = {
     creator: '@dekaliya_kiran',
     title: 'Certificates | Kiran Dekaliya',
     description:
-      'Professional certifications and credentials in MERN Stack, React, Node.js, and AWS by Kiran Dekaliya.',
+      'Professional certifications in MERN Stack, React, Node.js, and AWS by Kiran Dekaliya.',
     images: ['https://kirandekaliya.in/kd-logo.png'],
   },
   robots: {
