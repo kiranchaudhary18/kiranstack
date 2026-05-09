@@ -12,7 +12,7 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL('https://kirandekaliya.in'),
   title: {
-    default: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
+    default: 'Kiran Dekaliya (Chaudhary) | Software Engineer | Full Stack Developer',
     template: '%s | Kiran Dekaliya',
   },
   description:
@@ -45,8 +45,8 @@ export const metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://kirandekaliya.in',
-    siteName: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
-    title: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
+    siteName: 'Kiran Dekaliya (Chaudhary) | Software Engineer | Full Stack Developer',
+    title: 'Kiran Dekaliya (Chaudhary) | Software Engineer | Full Stack Developer',
     description:
       'Software Engineer and Full Stack Developer specializing in MERN Stack, React Native, Next.js, AWS, scalable web applications, and modern UI/UX.',
     images: [
@@ -94,7 +94,7 @@ const jsonLd = {
       '@type': 'Person',
       '@id': 'https://kirandekaliya.in/#person',
       name: 'Kiran Dekaliya',
-      alternateName: '',
+      alternateName: 'Kiran Dekaliya (Chaudhary)',
       url: 'https://kirandekaliya.in',
       image: {
         '@type': 'ImageObject',
@@ -141,7 +141,7 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': 'https://kirandekaliya.in/#website',
       url: 'https://kirandekaliya.in',
-      name: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
+      name: 'Kiran Dekaliya (Chaudhary) | Software Engineer | Full Stack Developer',
       description: 'Software Engineer and Full Stack Developer specializing in MERN Stack, React Native, Next.js, AWS, scalable web applications, and modern UI/UX.',
       author: { '@id': 'https://kirandekaliya.in/#person' },
       potentialAction: {
@@ -284,7 +284,7 @@ const jsonLd = {
     {
       '@type': 'ProfilePage',
       '@id': 'https://kirandekaliya.in/#profile',
-      name: 'Kiran Dekaliya | Software Engineer | Full Stack Developer',
+      name: 'Kiran Dekaliya (Chaudhary) | Software Engineer | Full Stack Developer',
       url: 'https://kirandekaliya.in',
       description: 'Professional portfolio and resume of Kiran Dekaliya - Software Engineer specializing in MERN Stack and modern web technologies.',
       mainEntity: { '@id': 'https://kirandekaliya.in/#person' },
