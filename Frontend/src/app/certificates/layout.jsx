@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Certificates | Kiran Dekaliya',
+  title: 'Certificates',
   description:
     'Professional certifications and achievements of Kiran Dekaliya - Software Engineer. Credentials in MERN Stack, React, Node.js, and AWS.',
   canonical: 'https://kirandekaliya.in/certificates',

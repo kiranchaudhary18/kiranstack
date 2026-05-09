@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'GitHub | Kiran Dekaliya',
+  title: 'GitHub',
   description:
     'GitHub profile of Kiran Dekaliya - Software Engineer. Open source projects, repositories, and contributions to the developer community.',
   canonical: 'https://kirandekaliya.in/github',

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Education | Kiran Dekaliya',
+  title: 'Education',
   description:
     'Education and qualifications of Kiran Dekaliya - Software Engineer. Academic background in software development and professional certifications.',
   canonical: 'https://kirandekaliya.in/education',

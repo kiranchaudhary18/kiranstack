@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Skills & Expertise | Kiran Dekaliya',
+  title: 'Skills & Expertise ',
   description:
     'Technical skills of Kiran Dekaliya - Software Engineer. Proficient in React, Next.js, Node.js, MongoDB, PostgreSQL, AWS, TypeScript, and modern full-stack development.',
   canonical: 'https://kirandekaliya.in/skills',

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Contact | Kiran Dekaliya',
+  title: 'Contact',
   description:
     'Contact Kiran Dekaliya - Software Engineer. Get in touch for project inquiries, collaborations, and business opportunities.',
   canonical: 'https://kirandekaliya.in/contact',

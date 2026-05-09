@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Projects | Kiran Dekaliya',
+  title: 'Project',
   description:
     'Portfolio projects by Kiran Dekaliya - Software Engineer. Web and mobile applications built with React, Next.js, React Native, Node.js, and modern technologies.',
   canonical: 'https://kirandekaliya.in/projects',
