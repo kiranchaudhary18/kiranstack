@@ -47,7 +47,8 @@ const item = {
 }
 
 export default function Home() {
-  const resumeLink = "https://res.cloudinary.com/dnbayngfx/image/upload/v1776667022/Screenshot_2026-04-20_120134_bln0sx.png"
+  const resumeImage = "https://res.cloudinary.com/dnbayngfx/image/upload/v1776667022/Screenshot_2026-04-20_120134_bln0sx.png"
+  const resumeDownloadLink = "https://drive.google.com/uc?id=1UtmjTuMZ-9a6Kv3JWRJMDJ6Gr2zbsM28&export=download"
   const homeProjects = [
     {
       id: 'mediconnect',
@@ -208,12 +209,12 @@ export default function Home() {
                 <motion.img
                   animate={{ objectPosition: ["center 0%", "center 100%", "center 0%"] }}
                   transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                  src={resumeLink}
+                  src={resumeImage}
                   alt="Resume"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <a href={resumeLink} download className="w-full">
+              <a href={resumeDownloadLink} download="Resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full">
                 <Button variant="primary" size="md" className="w-full text-[13px] sm:text-[15px] font-semibold py-2 sm:py-3 px-4">
                   <Download className="w-[16px] sm:w-[18px] h-[16px] sm:h-[18px] mr-2" />
                   Download Resume
