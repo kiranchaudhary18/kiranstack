@@ -22,7 +22,6 @@ export const metadata = {
     'Software Engineer',
     'Full Stack Developer',
     'MERN Stack Developer',
-    'React Native Developer',
     'Next.js Developer',
     'Node.js Developer',
     'AWS Developer',
@@ -201,20 +200,20 @@ const jsonLd = {
         {
           '@type': 'ListItem',
           position: 5,
-          name: 'Education',
-          item: 'https://kirandekaliya.in/education',
-        },
-        {
-          '@type': 'ListItem',
-          position: 6,
           name: 'Certificates',
           item: 'https://kirandekaliya.in/certificates',
         },
         {
           '@type': 'ListItem',
-          position: 7,
+          position: 6,
           name: 'GitHub',
           item: 'https://kirandekaliya.in/github',
+        },
+        {
+          '@type': 'ListItem',
+          position: 7,
+          name: 'Education',
+          item: 'https://kirandekaliya.in/education',
         },
         {
           '@type': 'ListItem',
@@ -253,13 +252,6 @@ const jsonLd = {
         },
         {
           '@type': 'WebPage',
-          '@id': 'https://kirandekaliya.in/education',
-          name: 'Education',
-          url: 'https://kirandekaliya.in/education',
-          description: 'Educational background and qualifications in software development and engineering.',
-        },
-        {
-          '@type': 'WebPage',
           '@id': 'https://kirandekaliya.in/certificates',
           name: 'Certificates',
           url: 'https://kirandekaliya.in/certificates',
@@ -271,6 +263,13 @@ const jsonLd = {
           name: 'GitHub',
           url: 'https://kirandekaliya.in/github',
           description: 'Open source projects and GitHub profile - Kiran Dekaliya on GitHub.',
+        },
+        {
+          '@type': 'WebPage',
+          '@id': 'https://kirandekaliya.in/education',
+          name: 'Education',
+          url: 'https://kirandekaliya.in/education',
+          description: 'Educational background and qualifications in software development and engineering.',
         },
         {
           '@type': 'WebPage',
