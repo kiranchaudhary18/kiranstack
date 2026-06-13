@@ -11,10 +11,10 @@ export default function StatCard({
   const colorClass = color === 'accent' ? 'text-accent' : color === 'secondary' ? 'text-secondary' : 'text-green-400'
 
   return (
-    <motion.div
+    <motion.div   
       whileHover={{ y: -8 }}
       className="glass rounded-xl p-6 text-center group"
-    >
+    > 
       <div className={`w-12 h-12 ${colorClass} mx-auto mb-4 group-hover:scale-110 transition-transform`}>
         {Icon && <Icon className="w-full h-full" />}
       </div>

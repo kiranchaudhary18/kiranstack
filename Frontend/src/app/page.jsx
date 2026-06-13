@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Code2, Zap, Target, Award, Github, Download, Linkedin, Database, Package, Code, Send, Server, Lightbulb, Braces, Wifi, Cloud, Palette, Grid, Rocket, Smartphone, Mail } from 'lucide-react'
@@ -47,6 +48,25 @@ const item = {
 }
 
 export default function Home() {
+  const [totalSolved, setTotalSolved] = useState(353);
+
+  useEffect(() => {
+    async function fetchLeetcodeStats() {
+      try {
+        const response = await fetch('/api/leetcode');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.totalSolved) {
+            setTotalSolved(data.totalSolved);
+          }
+        }
+      } catch (error) {
+        console.error("Failed to fetch LeetCode stats on home:", error);
+      }
+    }
+    fetchLeetcodeStats();
+  }, []);
+
   const resumeImage = "https://res.cloudinary.com/dnbayngfx/image/upload/v1776667022/Screenshot_2026-04-20_120134_bln0sx.png"
   const resumeDownloadLink = "https://drive.google.com/uc?id=1UtmjTuMZ-9a6Kv3JWRJMDJ6Gr2zbsM28&export=download"
   const homeProjects = [
@@ -272,7 +292,7 @@ export default function Home() {
               >
                 <div className="flex items-center justify-between mb-2">
                   <Code2 className="w-5 h-5 text-green-400" />
-                  <span className="text-2xl font-bold text-green-300">300+</span>
+                  <span className="text-2xl font-bold text-green-300">{totalSolved}+</span>
                 </div>
                 <p className="text-gray-400 font-inter text-sm">LeetCode Questions</p>
               </motion.div>

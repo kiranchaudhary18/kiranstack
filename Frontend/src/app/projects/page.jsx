@@ -53,7 +53,19 @@ const projects = [
     liveUrl: 'https://forever360.in/',
     codeUrl: 'https://github.com/kiranchaudhary18/Ecommerce-app',
     apiDocsUrl: 'https://documenter.getpostman.com/view/39216531/2sBXVeFXoG',
-    demoVideoUrl: 'https://youtu.be/d-qHYIlwKHE'
+    demoVideoUrl: 'https://www.youtube.com/watch?v=mya0k66Vm_0'
+  },
+  {
+    id: 'scamsniff',
+    title: 'ScamSniff — AI-Powered Job Scam Detection Platform',
+    category: 'AI + Full Stack',
+    description: 'A modern AI-powered platform that detects fraudulent job offers by analyzing raw text, PDF offer letters, and job URLs in real time. Features secure authentication, explainable AI, risk scoring, and interactive dashboards.',
+    image: 'https://res.cloudinary.com/dnbayngfx/image/upload/v1781374594/Screenshot_1366_h98jjg.png',
+    tech: ['React.js','Vite','NestJS','PostgreSQL','Python', 'RoBERTa','Logistic Regression','JWT','Vercel'],
+    liveUrl: 'https://hack-aarambh-movs.vercel.app/',
+    codeUrl: 'https://github.com/kiranchaudhary18/Hack-Aarambh',
+    apiDocsUrl: '',
+    demoVideoUrl: 'https://www.youtube.com/watch?v=Type4_jv7E4&t=7s'
   },
   {
     id: 'gearguard',
@@ -89,7 +101,7 @@ const projects = [
     liveUrl: 'https://github.com/kiranchaudhary18/Expirio/releases/download/Expirio-v1.0.apk/Expirio.apk',
     codeUrl: 'https://github.com/kiranchaudhary18/Expirio/',
     apiDocsUrl: '#',
-    demoVideoUrl: '#'
+    demoVideoUrl: 'https://www.youtube.com/shorts/2DoiyY8Noik'
   },
   {
     id: 'booknest',
@@ -224,7 +236,12 @@ export default function Projects({ collapsed }) {
 
   const filteredProjects = activeFilter === 'all' 
     ? projects 
-    : projects.filter(p => p.category.replace(/\s+/g, '').toLowerCase() === activeFilter.replace(/\s+/g, '').toLowerCase())
+    : activeFilter === 'Other'
+      ? projects.filter(p => {
+          const cat = p.category.toLowerCase();
+          return cat !== 'mern' && cat !== 'react native';
+        })
+      : projects.filter(p => p.category.replace(/\s+/g, '').toLowerCase() === activeFilter.replace(/\s+/g, '').toLowerCase())
 
   const mainContent = 'md:pl-[328px] md:pr-[64px]'
 

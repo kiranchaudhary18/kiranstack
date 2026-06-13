@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'
 import SectionTitle from '../../components/SectionTitle'
 import Card from '../../components/Card'
@@ -6,6 +7,38 @@ import { Terminal, ChevronRight, Github, Twitter, Linkedin, Youtube, HelpCircle,
 
 export default function About() {
   const mainContent = 'md:pl-[328px] md:pr-[64px]'
+
+  const [leetcodeStats, setLeetcodeStats] = useState({
+    ranking: 393442,
+    totalSolved: 353,
+    easySolved: 155,
+    mediumSolved: 175,
+    hardSolved: 23,
+    loading: true
+  });
+
+  useEffect(() => {
+    async function fetchLeetcodeStats() {
+      try {
+        const response = await fetch('/api/leetcode');
+        if (response.ok) {
+          const data = await response.json();
+          setLeetcodeStats({
+            ranking: data.ranking,
+            totalSolved: data.totalSolved,
+            easySolved: data.easySolved,
+            mediumSolved: data.mediumSolved,
+            hardSolved: data.hardSolved,
+            loading: false
+          });
+        }
+      } catch (error) {
+        console.error("Failed to fetch LeetCode stats:", error);
+        setLeetcodeStats(prev => ({ ...prev, loading: false }));
+      }
+    }
+    fetchLeetcodeStats();
+  }, []);
 
   const connectLinks = [
     { name: 'GitHub', icon: Github, url: 'https://github.com/kiranchaudhary18' },
@@ -157,7 +190,7 @@ export default function About() {
                   <div>
                     <h3 className="font-poppins font-bold text-3xl text-white mb-2">LeetCode <span className="text-accent">Profile</span></h3>
                     <p className="text-gray-400 font-inter text-sm flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-gray-500"></span> Global Rank: <strong className="text-accent">393,442</strong>
+                      <span className="w-1.5 h-1.5 rounded-full bg-gray-500"></span> Global Rank: <strong className="text-accent">{leetcodeStats.loading ? "..." : leetcodeStats.ranking.toLocaleString()}</strong>
                     </p>
                   </div>
                 </div>
@@ -173,7 +206,7 @@ export default function About() {
                     <p className="text-accent text-xs font-bold tracking-widest mb-4 flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full border border-accent"></span> TOTAL
                     </p>
-                    <p className="text-white text-4xl font-bold font-poppins mb-1">330</p>
+                    <p className="text-white text-4xl font-bold font-poppins mb-1">{leetcodeStats.loading ? "..." : leetcodeStats.totalSolved}</p>
                     <p className="text-gray-500 text-xs">Problems</p>
                   </div>
                 </Card>
@@ -182,7 +215,7 @@ export default function About() {
                     <p className="text-green-500 text-xs font-bold tracking-widest mb-4 flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-green-500"></span> EASY
                     </p>
-                    <p className="text-white text-4xl font-bold font-poppins mb-1">148</p>
+                    <p className="text-white text-4xl font-bold font-poppins mb-1">{leetcodeStats.loading ? "..." : leetcodeStats.easySolved}</p>
                     <p className="text-gray-500 text-xs">Solved</p>
                   </div>
                 </Card>
@@ -191,7 +224,7 @@ export default function About() {
                     <p className="text-yellow-500 text-xs font-bold tracking-widest mb-4 flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-yellow-500"></span> MEDIUM
                     </p>
-                    <p className="text-white text-4xl font-bold font-poppins mb-1">164</p>
+                    <p className="text-white text-4xl font-bold font-poppins mb-1">{leetcodeStats.loading ? "..." : leetcodeStats.mediumSolved}</p>
                     <p className="text-gray-500 text-xs">Solved</p>
                   </div>
                 </Card>
@@ -200,7 +233,7 @@ export default function About() {
                     <p className="text-red-500 text-xs font-bold tracking-widest mb-4 flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-red-500"></span> HARD
                     </p>
-                    <p className="text-white text-4xl font-bold font-poppins mb-1">18</p>
+                    <p className="text-white text-4xl font-bold font-poppins mb-1">{leetcodeStats.loading ? "..." : leetcodeStats.hardSolved}</p>
                     <p className="text-gray-500 text-xs">Solved</p>
                   </div>
                 </Card>
