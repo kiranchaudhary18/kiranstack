@@ -68,7 +68,7 @@ export default function Home() {
   }, []);
 
   const resumeImage = "https://res.cloudinary.com/dnbayngfx/image/upload/v1776667022/Screenshot_2026-04-20_120134_bln0sx.png"
-  const resumeDownloadLink = "https://drive.google.com/uc?id=1UtmjTuMZ-9a6Kv3JWRJMDJ6Gr2zbsM28&export=download"
+  const resumeDownloadLink = "https://drive.google.com/uc?id=1SyWEguDMPf37I5Z5f7ZzSwtsGBDi6B3K&export=download"
   const homeProjects = [
     {
       id: 'mediconnect',
