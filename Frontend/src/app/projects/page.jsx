@@ -68,6 +68,18 @@ const projects = [
     demoVideoUrl: 'https://www.youtube.com/watch?v=Type4_jv7E4&t=7s'
   },
   {
+    id: 'metaforge-ai',
+    title: 'MetaForge AI — Professional SEO Meta Tag Generator',
+    category: 'AI + Full Stack',
+    description: 'A premium AI-powered SEO toolkit that generates production-ready SEO assets including meta tags, Open Graph tags, Twitter cards, robots.txt, sitemap.xml, and JSON-LD schema. Features Gemini AI integration, code export, dark mode, and a modern SaaS interface.',
+    image: 'https://res.cloudinary.com/dnbayngfx/image/upload/v1782152021/Screenshot_2026-06-22_234327_w4mlsi.png',
+    tech: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'shadcn/ui', 'Gemini 2.5 Flash', 'Lucide React', 'next-themes', 'Vercel'],
+    liveUrl: 'https://meta-forge-ai.vercel.app/',
+    codeUrl: 'https://github.com/kiranchaudhary18/MetaForge-AI',
+    apiDocsUrl: '',
+    demoVideoUrl: ''
+  },
+  {
     id: 'gearguard',
     title: 'GearGuard - Hackathon Project',
     category: 'MERN',
