@@ -167,7 +167,7 @@ export default function Home() {
               transition={{ delay: 0.1 }}
               className="mb-3"
             >
-              <Badge>Full Stack Developer | React Native Developer</Badge>
+              <Badge>Full Stack Developer | Mern Stack Developer | React Native Developer</Badge>
             </motion.div>
 
             {/* Premium Tagline */}
@@ -270,7 +270,7 @@ export default function Home() {
               >
                 <div className="flex items-center justify-between mb-2">
                   <Linkedin className="w-5 h-5 text-pink-400" />
-                  <span className="text-2xl font-bold text-pink-300">7k+</span>
+                  <span className="text-2xl font-bold text-pink-300">9k+</span>
                 </div>
                 <p className="text-gray-400 font-inter text-sm">LinkedIn Connections</p>
               </motion.div>
@@ -281,7 +281,7 @@ export default function Home() {
               >
                 <div className="flex items-center justify-between mb-2">
                   <Github className="w-5 h-5 text-purple-400" />
-                  <span className="text-2xl font-bold text-purple-300">72+</span>
+                  <span className="text-2xl font-bold text-purple-300">80+</span>
                 </div>
                 <p className="text-gray-400 font-inter text-sm">GitHub Repositories</p>
               </motion.div>
