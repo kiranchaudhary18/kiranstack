@@ -8,6 +8,18 @@ import { ExternalLink, Github, Youtube, BookOpen } from 'lucide-react'
 
 const projects = [
   {
+    id: 'dmart-self-checkout',
+    title: 'DMart – Self Checkout & Smart Exit System',
+    category: 'Full Stack',
+    description: 'Developed an automated retail checkout platform allowing users to scan items and pay securely via Razorpay. Features a secure RBAC system for exit verification and automated CI/CD deployments using Docker and AWS.',
+    image: 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=500&h=300&fit=crop',
+    tech: ['Next.js', 'Django', 'PostgreSQL', 'AWS EC2', 'Docker', 'Razorpay'],
+    liveUrl: 'https://dmartselfcheckout.duckdns.org',
+    codeUrl: 'https://github.com/kiranchaudhary18/DMart-Self-Checkout-Smart-Exit-System',
+    apiDocsUrl: '',
+    demoVideoUrl: ''
+  },
+  {
     id: 'mediconnect',
     title: 'MediConnect - HealthCare Platform',
     category: 'MERN',
@@ -400,4 +412,3 @@ export default function Projects({ collapsed }) {
     </main>
   )
 }
-

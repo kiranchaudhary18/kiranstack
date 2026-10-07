@@ -270,7 +270,7 @@ export default function Home() {
               >
                 <div className="flex items-center justify-between mb-2">
                   <Linkedin className="w-5 h-5 text-pink-400" />
-                  <span className="text-2xl font-bold text-pink-300">9k+</span>
+                  <span className="text-2xl font-bold text-pink-300">11k+</span>
                 </div>
                 <p className="text-gray-400 font-inter text-sm">LinkedIn Connections</p>
               </motion.div>
@@ -552,4 +552,3 @@ export default function Home() {
     </div>
   )
 }
-
